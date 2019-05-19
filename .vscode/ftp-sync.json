@@ -1,0 +1,21 @@
+{
+  "remotePath": "/media/sem/Mailserver/",
+  "host": "theflyingbirds.net",
+  "username": "sem",
+  "password": "123qwe",
+  "port": 22,
+  "secure": true,
+  "protocol": "sftp",
+  "uploadOnSave": true,
+  "passive": true,
+  "debug": false,
+  "privateKeyPath": null,
+  "passphrase": null,
+  "agent": null,
+  "allow": [],
+  "ignore": ["\\.vscode", "\\.git", "\\.DS_Store"],
+  "generatedFiles": {
+    "extensionsToInclude": [""],
+    "path": ""
+  }
+}

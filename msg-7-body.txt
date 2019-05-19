@@ -1,0 +1,16 @@
+Return-Path: <bilcenterodense@gmail.com>
+Received: from [127.0.0.1] ([62.116.202.237])
+        by smtp.gmail.com with ESMTPSA id h46sm3004048edh.66.2019.05.14.02.27.37
+        for <bilcenterodense@gmail.com>
+        (version=TLS1_2 cipher=AES128-SHA bits=128/128);
+        Tue, 14 May 2019 02:27:38 -0700 (PDT)
+Content-Type: text/plain
+From: bilcenterodense@gmail.com
+To: bilcenterodense@gmail.com
+Subject: Sending Email using Node.js[nodemailer]
+Message-ID: <b8f8cccb-e93b-57ee-649e-24c77bf7a3f2@gmail.com>
+Content-Transfer-Encoding: 7bit
+Date: Tue, 14 May 2019 09:27:37 +0000
+MIME-Version: 1.0
+
+That was easy!

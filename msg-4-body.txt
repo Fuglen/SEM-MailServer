@@ -1,0 +1,209 @@
+Delivered-To: bilcenterodense@gmail.com
+Received: by 2002:a5d:514f:0:0:0:0:0 with SMTP id u15csp1385263wrt;
+        Sat, 13 Apr 2019 22:31:16 -0700 (PDT)
+X-Received: by 2002:a1f:b4ce:: with SMTP id d197mr35858903vkf.57.1555219875903;
+        Sat, 13 Apr 2019 22:31:15 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1555219875; cv=none;
+        d=google.com; s=arc-20160816;
+        b=EgTbHDF7FErFPJGuVGi1j95ekDBz5LiUMg+JP2gGu3gkXGsa1TVgJmDFDhxBjt4ur+
+         SCnrfq6mE2epJjvgGr97AUM+7b4TdSuxclrkl9SG32X8bStTN3KzfqoR8AmbBuZTDRqQ
+         r7RHjEl81wYpsTZihFIJSZ6KnBP98MNbb4mx1pBBBJzVuOFubCEZELTZ39sioSyRyQSk
+         m4TpK/7XyKUf6JM+4ZfNBWQkmTL40elsggx9OlpZl17q98vnQvG3sAq6SiFX4KOSZ+Pk
+         bXVC5vmg6YQ8eGc66+P4xTUsnASpanRXb/F72Odi+u2NRVfaao3gF6CIGtZmqmaRfOue
+         MaVw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:from:subject:message-id:feedback-id:date:mime-version
+         :dkim-signature;
+        bh=9rK5cMxyusp9P65PuS8pCarDkKHgYnoxKP7VM802XSk=;
+        b=WQUT5YIz07rmDV1sOi8cLDiW6cH6TMRX2NBguTzd+g+T5XiFOa0fl2ZgN9gDbely14
+         T+AXZ0gqo8dM4s2OxV+cwbPtOwGo5gH7N6xDWvgWTOULzKr5cw+2bZubhtZZxKI3oJ66
+         gn7nUYkJRiBxkAHEAMV9ARwU1HDJZrFMErlUCZylrgUQgRJL4RtEz8DB+BD2ZgFHDElu
+         pvmDBRpb+3YIJFG3VS8Q03Qzof7KqfeUBPgrFODx19HLXgBhkitpr0c+PyQ7VfArPYvf
+         pKTqiayqWqI07fSYvWiVkSS5qVsmzED1xCLl6SS+4V4pmLDx/fAcYEEFz8e9RztrG2Sd
+         iosg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20161025 header.b=qPieammA;
+       spf=pass (google.com: domain of 3o8wyxagtd-qtu-xkvregiiuatzy.muumrk.iushoriktzkxujktykmsgor.ius@gaia.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3o8WyXAgTD-QTU-XKVReGIIUaTZY.MUUMRK.IUSHORIKTZKXUJKTYKMSGOR.IUS@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Return-Path: <3o8WyXAgTD-QTU-XKVReGIIUaTZY.MUUMRK.IUSHORIKTZKXUJKTYKMSGOR.IUS@gaia.bounces.google.com>
+Received: from mail-sor-f69.google.com (mail-sor-f69.google.com. [209.85.220.69])
+        by mx.google.com with SMTPS id r6sor27803657vsp.109.2019.04.13.22.31.15
+        for <bilcenterodense@gmail.com>
+        (Google Transport Security);
+        Sat, 13 Apr 2019 22:31:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 3o8wyxagtd-qtu-xkvregiiuatzy.muumrk.iushoriktzkxujktykmsgor.ius@gaia.bounces.google.com designates 209.85.220.69 as permitted sender) client-ip=209.85.220.69;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20161025 header.b=qPieammA;
+       spf=pass (google.com: domain of 3o8wyxagtd-qtu-xkvregiiuatzy.muumrk.iushoriktzkxujktykmsgor.ius@gaia.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3o8WyXAgTD-QTU-XKVReGIIUaTZY.MUUMRK.IUSHORIKTZKXUJKTYKMSGOR.IUS@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=accounts.google.com; s=20161025;
+        h=mime-version:date:feedback-id:message-id:subject:from:to;
+        bh=9rK5cMxyusp9P65PuS8pCarDkKHgYnoxKP7VM802XSk=;
+        b=qPieammARLB1/Fhqjgr0U/0EawseUbJiunVJzvVPPT3ZnlVtKlc7dgbU6emdrbP3gl
+         2rl7FuWNS1Nsi91L8d4SyvbBrUHZuuVZj5M8vmxpenr9kSkIw7qg222zSGHRDVYwqQPD
+         Xd6rG5QPSXgoyTcXXIH/R9b3Jvru1vt8zsR4H321moo/ibJ2RQ9IgvrQyKIh0/BAkGTL
+         xi/1CR1eH3bqpWaHYFwkbD/RcW50mrjJ6ufJUb1/UTW48URNEKCIV/ldUZf8GXBXWdCJ
+         Ht47h+On+QLBTyQrfLCtDnhC70WxGkQByBJUR5hoXO/Dce69CWHaM3ZPxAfuOUMpeMfs
+         mcow==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:date:feedback-id:message-id:subject
+         :from:to;
+        bh=9rK5cMxyusp9P65PuS8pCarDkKHgYnoxKP7VM802XSk=;
+        b=DC9wuxEEcCVFS6kfDMhRgsesRLr6D3bw0tMZfsPHqs+DxhmEivr2OFcGcJT+KHzL1f
+         9RwmkbcgQFCdsu7G88Y3Qz6Nbw4c+yNkgCq13RQE1R6OAhs/T4/GgFDupRaT2WBaRfQN
+         U1Aadtkivlc+PFiuOvByWaeDTHBObjC54i23TCaAi3Py74ZK4j+ry0sjzYZ5OLsUPkYL
+         P9BwRTkQJp5C3FDDF9JEG3PLILMvjG+tVbkh9QiIfO8AmEIxLJK9xuIOTFs0SFdsUfWB
+         PijWPTMw/IRQbjV8vxv1QzoI1Nh+QZzneOZo8zP6pXG2+zGnDRFK9yQF3ahGdxnujY7s
+         IhYA==
+X-Gm-Message-State: APjAAAWe+U0ilP2dPfQmBAojAQmdnNBv6iShLUKhn+uYWDtGPz3jmxf1
+	rfTZTv3aX61g9TG5oiIe9qTn/ydPQ75j
+X-Google-Smtp-Source: APXvYqz0Tq7lXWRX4VbaJRAkaLmN+dS3eIcOy/Yb+eCuMFRGQAVMsgOGLcfKAlsF0Xd6DLP+Om3taWG6MWeYa9FVyA3unQ==
+MIME-Version: 1.0
+X-Received: by 2002:a67:ecc5:: with SMTP id i5mr1166136vsp.6.1555219875456;
+ Sat, 13 Apr 2019 22:31:15 -0700 (PDT)
+Date: Sun, 14 Apr 2019 01:43:12 +0000 (UTC)
+X-Account-Notification-Type: 188-anexp#givab-fa--mdv2-fa--sapef-a2--saprfsm-const
+Feedback-ID: 188-anexp#givab-fa--mdv2-fa--sapef-a2--saprfsm-const:account-notifier
+X-Notifications: 90e2d44f93000000
+Message-ID: <BcRu_A-gxHfr5060Q3YXGQ.0@notifications.google.com>
+Subject: =?UTF-8?Q?Hj=C3=A6lp_os_med_at_beskytte_dig=2E_Sikkerhedstips_fra_Go?=
+	=?UTF-8?Q?ogle?=
+From: Google <no-reply@accounts.google.com>
+To: bilcenterodense@gmail.com
+Content-Type: multipart/alternative; boundary="0000000000003966ea058676d831"
+
+--0000000000003966ea058676d831
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+RGVha3RpdmVyIG1pbmRyZSBzaWtrZXIgYWRnYW5nDQpiaWxjZW50ZXJvZGVuc2VAZ21haWwuY29t
+DQoNCg0KDQpEaW5lIHBlcnNvbmxpZ2Ugb3BseXNuaW5nZXIgZXIgc8OlcmJhcmUsIGZvcmRpIGR1
+IHRpbGxhZGVyLCBhdCBhcHBzIG9nDQplbmhlZGVyIGhhciBhZGdhbmcgdGlsIGRpbiBrb250byBw
+w6UgZW4gbWluZHJlIHNpa2tlciBtw6VkZS4NCkRlYWt0aXZlciBkZW5uZSBhZGdhbmdzdHlwZSwg
+b2cgc2UgYW5kcmUgdGlscGFzc2VkZSBzaWtrZXJoZWRzYW5iZWZhbGluZ2VyDQppIFNpa2tlcmhl
+ZHN0amVrDQo8aHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL0FjY291bnRDaG9vc2VyP0VtYWls
+PWJpbGNlbnRlcm9kZW5zZUBnbWFpbC5jb20mY29udGludWU9aHR0cHM6Ly9teWFjY291bnQuZ29v
+Z2xlLmNvbS9zZWN1cml0eS1jaGVja3VwP3V0bV9zb3VyY2UlM0Rnb29nbGUlMjZ1dG1fbWVkaXVt
+JTNEZW1haWwlMjZ1dG1fY2FtcGFpZ24lM0RzYXAlMjZhbmVpZCUzRC04OTAyMDQzOTEyMDcwMTE0
+MTAzJTI2c2VhJTNEMTAlMjZyZm4lM0QxNTU1MjA2MTkyODU2JTI2YW5leHAlM0RnaXZhYi1mYS0t
+bWR2Mi1mYS0tc2FwZWYtYTItLXNhcHJmc20tY29uc3Q+DQouDQoNCg0KDQpGb3JldGFnIGhhbmRs
+aW5nDQo8aHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL0FjY291bnRDaG9vc2VyP0VtYWlsPWJp
+bGNlbnRlcm9kZW5zZUBnbWFpbC5jb20mY29udGludWU9aHR0cHM6Ly9teWFjY291bnQuZ29vZ2xl
+LmNvbS9zZWN1cml0eS1jaGVja3VwP3V0bV9zb3VyY2UlM0Rnb29nbGUlMjZ1dG1fbWVkaXVtJTNE
+ZW1haWwlMjZ1dG1fY2FtcGFpZ24lM0RzYXAlMjZhbmVpZCUzRC04OTAyMDQzOTEyMDcwMTE0MTAz
+JTI2c2VhJTNEMTAlMjZyZm4lM0QxNTU1MjA2MTkyODU2JTI2YW5leHAlM0RnaXZhYi1mYS0tbWR2
+Mi1mYS0tc2FwZWYtYTItLXNhcHJmc20tY29uc3Q+DQo8aHR0cHM6Ly9hY2NvdW50cy5nb29nbGUu
+Y29tL0FjY291bnRDaG9vc2VyP0VtYWlsPWJpbGNlbnRlcm9kZW5zZUBnbWFpbC5jb20mY29udGlu
+dWU9aHR0cHM6Ly9teWFjY291bnQuZ29vZ2xlLmNvbS9zZWN1cml0eS1jaGVja3VwP3V0bV9zb3Vy
+Y2UlM0Rnb29nbGUlMjZ1dG1fbWVkaXVtJTNEZW1haWwlMjZ1dG1fY2FtcGFpZ24lM0RzYXAlMjZh
+bmVpZCUzRC04OTAyMDQzOTEyMDcwMTE0MTAzJTI2c2VhJTNEMTAlMjZyZm4lM0QxNTU1MjA2MTky
+ODU2JTI2YW5leHAlM0RnaXZhYi1mYS0tbWR2Mi1mYS0tc2FwZWYtYTItLXNhcHJmc20tY29uc3Q+
+DQpFciBkdSBuZXJ2w7hzIGZvciBhdCBrbGlra2UgcMOlIGxpbmtzPyBCZXPDuGcgU2lra2VyaGVk
+c3RqZWsgcMOlDQpodHRwczovL215YWNjb3VudC5nb29nbGUuY29tL3NlY3VyaXR5LWNoZWNrdXAN
+ClZpIGhhciBzZW5kdCBkaWcgZGVubmUgbWFpbCBmb3IgYXQgdW5kZXJyZXR0ZSBkaWcgb20gdmln
+dGlnZSDDpm5kcmluZ2VyIGFmDQpkaW4gR29vZ2xlLWtvbnRvIG9nIEdvb2dsZS10amVuZXN0ZXIN
+CsKpIDIwMTkgR29vZ2xlIExMQywgMTYwMCBBbXBoaXRoZWF0cmUgUGFya3dheSwgTW91bnRhaW4g
+VmlldywgQ0EgOTQwNDMsIFVTQQ0K
+--0000000000003966ea058676d831
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html lang=3Dda><head><meta content=3D"email=3Dno" name=3D"f=
+ormat-detection"><meta content=3D"date=3Dno" name=3D"format-detection"><sty=
+le>.awl a {color: #FFFFFF; text-decoration: none;} .abml a {color: #000000;=
+ font-family: Roboto-Medium,Helvetica,Arial,sans-serif; font-weight: bold; =
+text-decoration: none;} .adgl a {color: rgba(0, 0, 0, 0.87); text-decoratio=
+n: none;} .afal a {color: #b0b0b0; text-decoration: none;} @media screen an=
+d (min-width: 600px) {.v2sp {padding: 6px 30px 0px;} .v2rsp {padding: 0px 1=
+0px;}} @media screen and (min-width: 600px) {.mdv2rw {padding: 40px 40px;}}=
+ </style><link href=3D"//fonts.googleapis.com/css?family=3DGoogle+Sans" rel=
+=3Dstylesheet type=3D"text/css"></head><body bgcolor=3D"#FFFFFF" style=3D"m=
+argin: 0; padding: 0;"><table border=3D0 cellpadding=3D0 cellspacing=3D0 he=
+ight=3D"100%" lang=3Dda style=3D"min-width: 348px;" width=3D"100%"><Tbody><=
+tr height=3D32 style=3D"height: 32px;"><td></td></tr><tr align=3Dcenter><td=
+><div itemscope itemtype=3D"//schema.org/EmailMessage"><div itemprop=3Dacti=
+on itemscope itemtype=3D"//schema.org/ViewAction"><link href=3D"https://acc=
+ounts.google.com/AccountChooser?Email=3Dbilcenterodense@gmail.com&amp;conti=
+nue=3Dhttps://myaccount.google.com/security-checkup?utm_source%3Dgoogle%26u=
+tm_medium%3Demail%26utm_campaign%3Dsap%26aneid%3D-8902043912070114103%26sea=
+%3D10%26rfn%3D1555206192856%26anexp%3Dgivab-fa--mdv2-fa--sapef-a2--saprfsm-=
+const" itemprop=3Durl><meta content=3D"Gennemg=C3=A5 aktivitet" itemprop=3D=
+name></div></div><table border=3D0 cellpadding=3D0 cellspacing=3D0 style=3D=
+"padding-bottom: 20px;max-width: 516px;min-width: 220px;"><Tbody><tr><td st=
+yle=3D"width: 8px;" width=3D8></td><td><div align=3Dcenter class=3Dmdv2rw s=
+tyle=3D"border-style: solid; border-width: thin; border-color:#dadce0; bord=
+er-radius: 8px; padding: 40px 20px;"><img height=3D24 src=3D"https://www.gs=
+tatic.com/accountalerts/email/googlelogo_color_188x64dp.png" style=3D"width=
+: 75px; height: 24px; margin-bottom: 16px;" width=3D75><div style=3D"font-f=
+amily: &#39;Google Sans&#39;,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;=
+border-bottom: thin solid #dadce0; color: rgba(0,0,0,0.87); line-height: 32=
+px; padding-bottom: 24px;padding-bottom: 32px;padding-top: 32px;text-align:=
+ center; word-break: break-word;"><div style=3D"font-size: 24px;"><table st=
+yle=3D"font-size: 24px; line-height: 28px; text-align: center; width: 100%;=
+"><Tbody><tr><td style=3D"padding-bottom: 24px;"><a><img height=3D90 src=3D=
+"https://www.gstatic.com/accountalerts/email/sa_shield_yellow_161017_103x90=
+@2.png" style=3D"width: 103px; height: 90px;" width=3D103></a></td></tr><tr=
+><td>Deaktiver mindre sikker=C2=A0adgang</td></tr><tr><td style=3D"font-siz=
+e: 16px;"><a class=3Dadgl style=3D"color: inherit; text-decoration: none;">=
+bilcenterodense@gmail.com</a></td></tr></Tbody></table></div></div><div sty=
+le=3D"font-family: Roboto-Regular,Helvetica,Arial,sans-serif; font-size: 14=
+px; color: rgba(0,0,0,0.87); line-height: 20px;padding-top: 20px; text-alig=
+n: left;"><table style=3D"font-size: 14px; letter-spacing: 0.2; line-height=
+: 20px; text-align: center;"><Tbody><tr><td style=3D"padding-bottom: 24px; =
+text-align: start;"><table jsname=3Dtip style=3D"margin-left: -20px;"><Tbod=
+y><tr><td style=3D"vertical-align: top;"><img height=3D70 src=3D"https://ww=
+w.gstatic.com/accountalerts/email/turnoff_2x_70x70.png" style=3D"width: 70p=
+x; height: 70px; margin-top: 2px;" width=3D70></td><td style=3D"font-size: =
+14px; letter-spacing: 0.2; line-height: 20px; padding-left: 3%;">Dine perso=
+nlige oplysninger er s=C3=A5rbare, fordi du tillader, at apps og enheder ha=
+r adgang til din konto p=C3=A5 en mindre sikker=C2=A0m=C3=A5de.<div style=
+=3D"height: 13px;"></div>Deaktiver denne adgangstype, og se andre tilpassed=
+e sikkerhedsanbefalinger i <a href=3D"https://accounts.google.com/AccountCh=
+ooser?Email=3Dbilcenterodense@gmail.com&amp;continue=3Dhttps://myaccount.go=
+ogle.com/security-checkup?utm_source%3Dgoogle%26utm_medium%3Demail%26utm_ca=
+mpaign%3Dsap%26aneid%3D-8902043912070114103%26sea%3D10%26rfn%3D155520619285=
+6%26anexp%3Dgivab-fa--mdv2-fa--sapef-a2--saprfsm-const" link-id=3D"content-=
+main-link" target=3D"_blank">Sikkerhedstjek</a>.</td></tr></Tbody></table><=
+/td></tr><tr><td><a data-meta-key=3D"go-to-sa" href=3D"https://accounts.goo=
+gle.com/AccountChooser?Email=3Dbilcenterodense@gmail.com&amp;continue=3Dhtt=
+ps://myaccount.google.com/security-checkup?utm_source%3Dgoogle%26utm_medium=
+%3Demail%26utm_campaign%3Dsap%26aneid%3D-8902043912070114103%26sea%3D10%26r=
+fn%3D1555206192856%26anexp%3Dgivab-fa--mdv2-fa--sapef-a2--saprfsm-const" li=
+nk-id=3D"main-button-link" style=3D"display:inline-block; text-decoration: =
+none;" target=3D"_blank"><table border=3D0 cellpadding=3D0 cellspacing=3D0 =
+style=3D"background-color: #4184F3; border-radius: 2px; min-width: 90px;"><=
+tbody><tr height=3D6 style=3D"height: 6px;"></tr><tr><td style=3D"padding-l=
+eft: 8px; padding-right: 8px; text-align: center;"><a data-meta-key=3D"go-t=
+o-sa" href=3D"https://accounts.google.com/AccountChooser?Email=3Dbilcentero=
+dense@gmail.com&amp;continue=3Dhttps://myaccount.google.com/security-checku=
+p?utm_source%3Dgoogle%26utm_medium%3Demail%26utm_campaign%3Dsap%26aneid%3D-=
+8902043912070114103%26sea%3D10%26rfn%3D1555206192856%26anexp%3Dgivab-fa--md=
+v2-fa--sapef-a2--saprfsm-const" link-id=3D"main-button-link" style=3D"font-=
+family: Roboto-Regular,Helvetica,Arial,sans-serif; color: #ffffff; font-wei=
+ght: 400; line-height: 20px; text-decoration: none;font-size: 13px;text-tra=
+nsform: uppercase;" target=3D"_blank">Foretag handling</a></td></tr><tr hei=
+ght=3D6 style=3D"height: 6px;"></tr></tbody></table></a></td></tr><tr style=
+=3D"color: rgba(0, 0, 0, 0.54); font-size: 12px; line-height: 150%; text-al=
+ign: center;"><td style=3D"padding-top: 12px">Er du nerv=C3=B8s for at klik=
+ke p=C3=A5 links? Bes=C3=B8g Sikkerhedstjek p=C3=A5 <a class=3Dadgl style=
+=3D"color: rgba(0, 0, 0, 0.87);text-decoration: inherit;">https://myaccount=
+.google.com/security-checkup</a></td></tr></Tbody></table></div></div><div =
+style=3D"text-align: center;"><div style=3D"font-family: Roboto-Regular,Hel=
+vetica,Arial,sans-serif;color: rgba(0,0,0,0.54);font-size: 11px; line-heigh=
+t: 18px; padding-top: 12px; text-align: center;"><div>Vi har sendt dig denn=
+e mail for at underrette dig om vigtige =C3=A6ndringer af din Google-konto =
+og Google-tjenester</div><div style=3D"direction: ltr;">&copy; 2019 Google =
+LLC, <a class=3Dafal style=3D"font-family: Roboto-Regular,Helvetica,Arial,s=
+ans-serif;color: rgba(0,0,0,0.54);font-size: 11px; line-height: 18px; paddi=
+ng-top: 12px; text-align: center;">1600 Amphitheatre Parkway, Mountain View=
+, CA 94043, USA</a></div></div></div></td><td style=3D"width: 8px;" width=
+=3D8></td></tr></Tbody></table></td></tr><tr height=3D32 style=3D"height: 3=
+2px;"><td></td></tr></Tbody></table><img height=3D1 src=3D"https://notifica=
+tions.googleapis.com/email/t/AFG8qyXJl3fU03JSZ9VxiV-6jYb-ukd5joIrJFEuLASBPh=
+iHq-y3S6o014AUx2XTpCzEjAIIeIDYh1UrLR7DWDrsQ-hqYLnLLMjk9N1quL2qkoIVGbkrGlJ9N=
+sDHJiYIBiXXxQgzMXLCswRJekEZ7q8QG9zm13yh3pXj4-bF8ELGEa90UkTtE-Fw8QWlLeb7yBvD=
+zVb-I1Uxeh0BWr4cFlY8V9oCHT-E771XMU0Kl-1i1aR4mvYXuwGx8cEC5to8MmAXtPSFK2Hk_5k=
+rW6cEeBDyq1mP3Rb_fA/a.gif" width=3D1></body></html>
+--0000000000003966ea058676d831--
